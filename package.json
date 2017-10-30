@@ -1,0 +1,18 @@
+{
+  "name": "conditioner-boilerplate-global",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "conditioner-core": "^2.0.0",
+    "requirejs": "^2.3.5"
+  },
+  "scripts": {
+    "start": "node_modules/http-server/bin/http-server ./"
+  },
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  },
+  "author": "Rik Schennink <hello@rikschennink.nl> (http://rikschennink.nl/)",
+  "license": "MIT"
+}
