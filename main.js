@@ -1,10 +1,19 @@
-require(['./node_modules/conditioner-core/dist/conditioner-core.js'], function(conditioner) {
+require(['./node_modules/conditioner-core/umd/conditioner-core.js'], function(conditioner) {
 
     // apply custom settings
     conditioner.addPlugin({
 
         // converts module aliases to paths
-        moduleSetName: (name) => '/ui/' + name + '.js',
+        moduleSetName: function(name) { return '/ui/' + name + '.js' },
+
+        // setup AMD require
+        moduleImport: function(name) {
+            return new Promise(function(resolve) {
+                require([name], function(module) {
+                    resolve(module);
+                });
+            });
+        }
 
     });
 

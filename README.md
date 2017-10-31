@@ -1,6 +1,6 @@
-# Conditioner RequireJS Boilerplate
+# Conditioner AMD Boilerplate
 
-A RequireJS based boilerplate for [Conditioner](https://github.com/rikschennink/conditioner).
+An AMD based boilerplate for [Conditioner](https://github.com/rikschennink/conditioner) based on [RequireJS](https://github.com/requirejs/requirejs).
 
 Install dependencies from npm.
 
