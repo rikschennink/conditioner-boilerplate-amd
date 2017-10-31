@@ -10,7 +10,7 @@ define(function() {
     
     
         // public component API
-        element.foo = () => {
+        element.foo = function() {
     
             console.log('foo called!');
     
