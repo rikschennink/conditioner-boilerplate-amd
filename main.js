@@ -1,4 +1,4 @@
-require(['./node_modules/conditioner-core/umd/conditioner-core.js'], function(conditioner) {
+require(['./node_modules/conditioner-core/conditioner-core.js'], function(conditioner) {
 
     // apply custom settings
     conditioner.addPlugin({
